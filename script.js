@@ -24,9 +24,6 @@ const tableBody = document.getElementById("tableBody");
 // 変数
 // =====================
 
-// 現在の追加件数
-let count = 0;
-
 // 背景色の配列
 const colors =[
     "lightblue",
@@ -76,6 +73,81 @@ displayBtn.addEventListener("click", function () {
     const deleteBtn =document.createElement("button");
 
     //　ボタン文字
+    deleteBtn.textContent = "削除";
+
+    // =====================
+    // 削除ボタン
+    // =====================
+
+    deleteBtn.addEventListener("click", function () {
+
+        //行を削除
+        tr.remove();
+});
+
+    // tdの中にボタンを入れる
+    deleteTd.appendChild(deleteBtn);
+
+    // trの中にtdを入れる
+    tr.appendChild(textTd);
+    tr.appendChild(deleteTd);
+
+    //テーブルへ追加
+    tableBody.appendChild(tr);
+
+    // 4行目以降は1番古い行を削除
+    if (tableBody.children.length > 3) {
+        tableBody.removeChild(tableBody.firstElementChild);
+    }
+
+    //　入力欄を空にする
+    textInput.value = "";
+
+});
+
+// =====================
+// 設問２
+// 背景色変更
+// =====================
+
+bgBtn.addEventListener("click", function () {
+
+    //　配列の色を適用　//
+    document.body.style.backgroundColor =
+      colors[colorIndex];
+    
+    //　次の番号へ
+    colorIndex++;
+
+    //　最後まで行ったら最初に戻る
+    if(colorIndex >= colors.length) {
+     colorIndex = 0;
+    }
+});
+
+
+// =====================
+// 設問３
+// ハイライトの切り替え
+// =====================
+
+highlightBtn.addEventListener("click", function () {
+
+    // highlightクラスをつけたり外したりする
+    displayArea.classList.toggle("highlight");
+
+});
+
+
+// =====================
+// 設問７
+// ループ処理
+// =====================
+
+for (let i = 1; i <= 5; i++) {
+
+    console.log(i);
+}    //　ボタン文字
     deleteBtn.textContent = "削除";
 
     // =====================
