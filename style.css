@@ -1,0 +1,91 @@
+/* ページ全体の設定 */
+body {
+
+/* 文字の種類 */
+font-family: sans-serif;
+
+/* 内側の余白 */
+padding: 30px;
+
+/* 背景色 */
+background-color: lightblue;
+}
+
+/* 入力欄の設定 */
+input {
+
+    /* 入力欄の内側の余白 */
+    padding: 8px;
+
+}
+
+/* ボタン共通の設定 */
+button {
+
+    /* 上下　左右の余白　*/
+    padding: 8px 12px;
+
+    /* ボタン同士の間隔 */
+    margin: 5px;
+
+    /* マウスを乗せると指マークになる */
+    cursor: pointer;
+
+}
+
+/* 表示エリア */
+#displayArea {
+
+    /* 上に余白　*/
+    margin-top: 20px;
+
+    /* 内側の余白 */
+    padding: 20px;
+
+    /* 枠線 */
+    border: 1px solid #333;
+
+    /* 背景色 */
+    background-color: white;
+
+}
+
+/* JavaScriptで付け外しするハイライト */
+.highlight {
+
+    /* 黄色 */
+    background-color: yellow;
+
+    /* 太字 */
+    font-weight: bold;
+
+}
+
+/* テーブル全体 */
+table {
+
+    /* 上の余白 */
+    margin-top: 20px;
+
+    /* 枠線を重ねる */
+    border-collapse: collapse;
+
+    /* 横幅 */
+    width: 400px;
+
+}
+
+/* テーブルのセル */
+th,
+td {
+
+    /* 枠線 */
+    border: 1px solid #333;
+
+    /* 内側の余白 */
+    padding: 8px;
+
+    /* 文字を中央揃え */
+    text-align: center;
+
+}

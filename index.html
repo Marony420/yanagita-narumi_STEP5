@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- 文字コードを日本語に対応する -->
+    <meta charset="UTF-8">
+
+    <!-- ブラウザのタブに表示されるタイトル -->
+    <title>STEP5 テスト</title>
+
+    <!-- CSSファイルを読み込む -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- 見出し -->
+    <h1>STEP5 JavaScriptテスト</h1>
+    
+    <!-- テキスト入力欄 -->
+    <input type="text" id="textInput" placeholder="テキストを入力">
+
+    <!-- 表示ボタン -->
+    <button id="displayBtn">表示</button>
+
+    <!-- 背景色変更ボタン -->
+    <button id="bgBtn">背景色を変更</button>
+
+    <!-- ハイライト切り替えボタン -->
+    <button id="highlightBtn">ハイライト切り替え</button>
+
+    <!-- 入力した文字を表示する場所 -->
+    <div id="displayArea">
+        ここに表示されます
+    </div>
+
+    <!-- テーブル -->
+    <table>
+
+      <!-- テーブルの見出し部分 -->
+      <thead>
+        <tr>
+            <th>入力テキスト</th>
+            <th>操作</th>
+        </tr>
+      </thead>
+
+      <!-- JavaScriptで行を追加する場所 -->
+      <tbody id="tableBody">
+
+      </tbody>
+
+    </table>
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="script.js"></script>
+
+</body>
+</html>
